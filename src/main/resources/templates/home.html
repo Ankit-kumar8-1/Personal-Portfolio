@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1.0" />
@@ -20,13 +20,8 @@
     <link rel="stylesheet" href="/css/style.css" />
   </head>
   <body>
-    <div class="loader_wrapper">
-      <div class="loader">
-        <div class="loader-text">A.k.</div>
-        <div class="loader-circle"></div>
-        <div class="loader-circle"></div>
-        <div class="loader-circle"></div>
-      </div>
-    </div>
+    <div th:replace="~{fragments/loader :: loader}"></div>
+    <h1>Hello !</h1>
+    <script src="/js/script.js"></script>
   </body>
 </html>
