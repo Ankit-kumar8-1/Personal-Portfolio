@@ -570,3 +570,84 @@ a {
     height: 200px;
   }
 }
+
+/* hero stats box */
+.hero-stats {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: rgba(255, 255, 255, 0.12);
+  padding: 12px 18px;
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.18);
+  transition: 0.3s ease;
+}
+
+.hero-stats:hover {
+  transform: translateY(-6px);
+}
+
+/* icon */
+.hero-stats-icon {
+  font-size: 22px;
+  color: #00eaff;
+}
+
+/* text */
+.hero-stats-label {
+  font-size: 15px;
+  font-weight: 600;
+  color: white;
+}
+
+/* position curve around image */
+.stats-1 {
+  top: 15%;
+  left: 75%;
+  transform: translateX(-50%);
+}
+
+.stats-2 {
+  top: 45%;
+  left: 90%;
+  transform: translateX(-50%);
+}
+
+.stats-3 {
+  top: 75%;
+  left: 75%;
+  transform: translateX(-50%);
+}
+
+/* mobile */
+@media (max-width: 768px) {
+  .hero-stats {
+    padding: 10px 14px;
+    gap: 8px;
+  }
+
+  .hero-stats-icon {
+    font-size: 18px;
+  }
+
+  .hero-stats-label {
+    font-size: 13px;
+  }
+
+  /* mobile positions */
+  .stats-1 {
+    top: 5%;
+    left: 50%;
+  }
+  .stats-2 {
+    top: 25%;
+    left: 70%;
+  }
+  .stats-3 {
+    top: 50%;
+    left: 52%;
+  }
+}
