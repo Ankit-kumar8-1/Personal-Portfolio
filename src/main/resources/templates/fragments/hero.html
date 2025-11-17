@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+  <head>
+    <meta charset="UTF-8" />
+  </head>
+
+  <body>
+    <!-- header Fragment -->
+    <th:block th:fragment="hero-section">
+      <section class="hero" id="home">
+        <div class="hero-background"></div>
+        <div class="container hero-container">
+          <div class="hero-content">
+            <div class="hero-greeting">Hi there , I'm</div>
+            <h1 class="hero-title">
+              <span class="gradient-text">Ankit Saahariya</span>
+            </h1>
+            <h2 class="hero-subtitle">I am a <span id="typing-role"></span></h2>
+            <p class="hero-decription">
+              I’m a Java Full Stack Developer passionate about building
+              responsive and user-friendly web applications using Spring Boot,
+              Thymeleaf, HTML, CSS, and JavaScript.
+            </p>
+
+            <div class="hero-buttons">
+              <a href="#projects" class="btn btn-primary">
+                View My Work <i class="fas fa-arrow-right"></i>
+              </a>
+              <a href="#contact" class="btn btn-outline"> Get in Touch </a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </th:block>
+  </body>
+</html>
