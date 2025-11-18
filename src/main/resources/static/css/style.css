@@ -278,7 +278,9 @@ a {
   right: 0;
   width: 50%;
   height: 100%;
-  background: linear-gradient(135deg, var(--primary), var(--accent));
+  /* background: linear-gradient(135deg, var(--primary), var(--accent)); */
+  /* background-color: rgb(216, 216, 12); */
+  background: transparent;
   opacity: 0.08;
   z-index: 0;
 }
@@ -427,7 +429,7 @@ a {
 
 /* Social Links */
 .social-links {
-  margin-top: 2rem;
+  margin-top: 0rem;
   display: flex;
   gap: 1.2rem;
   align-items: center;
@@ -727,5 +729,69 @@ a {
   .photo-popup-inner img {
     width: 90%;
     max-width: 380px;
+  }
+}
+
+/* Scroll Indicator Container */
+.scroll-indecator {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  position: absolute;
+  bottom: 22px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 14px;
+  color: #ffffff;
+  opacity: 1;
+  text-shadow: 0 0 6px rgba(255, 255, 255, 0.4);
+}
+
+/* Line */
+.scroll-indecator-line {
+  width: 3px;
+  height: 48px;
+  background: linear-gradient(
+    to bottom,
+    rgba(255, 255, 255, 0.2),
+    rgba(255, 255, 255, 0.05)
+  );
+  position: relative;
+  overflow: hidden;
+  border-radius: 20px;
+  box-shadow: 0 0 8px rgba(255, 255, 255, 0.25);
+}
+
+/* Animated Dot */
+.scroll-indecator-dot {
+  width: 8px;
+  height: 8px;
+  background: #ffffff;
+  border-radius: 50%;
+  position: absolute;
+  left: -2.5px;
+  animation: scrollMove 1.6s ease-in-out infinite;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+}
+
+/* Dot Animation */
+@keyframes scrollMove {
+  0% {
+    top: -10px;
+    opacity: 0;
+    transform: scale(0.7);
+  }
+  20% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  60% {
+    opacity: 1;
+  }
+  100% {
+    top: 55px;
+    opacity: 0;
+    transform: scale(0.7);
   }
 }
