@@ -5,7 +5,90 @@
   </head>
 
   <body>
-    <!-- about section  -->
-    <th:block th:fragment="skill-section"> </th:block>
+    <!-- Skill  section  -->
+    <th:block th:fragment="skill-section">
+      <section class="skill-section" id="skills">
+        <div class="container">
+          <div class="section-title-container">
+            <h2 class="section-title">Skills</h2>
+            <p class="section-subtitle">Technologies and tools I work with</p>
+          </div>
+
+          <div class="skills-wrapper">
+            <!-- Programming Languages -->
+            <div class="skill-card">
+              <div class="skill-card-icon"><i class="fas fa-code"></i></div>
+              <h3 class="skill-card-title">Programming Languages</h3>
+              <ul class="skill-card-list">
+                <li>Java</li>
+                <li>C</li>
+                <li>JavaScript</li>
+                <li>SQL</li>
+              </ul>
+            </div>
+
+            <!-- Backend -->
+            <div class="skill-card">
+              <div class="skill-card-icon"><i class="fas fa-server"></i></div>
+              <h3 class="skill-card-title">Backend Frameworks</h3>
+              <ul class="skill-card-list">
+                <li>Spring Boot</li>
+                <li>Spring MVC</li>
+                <li>Spring Security</li>
+                <li>Hibernate / JPA</li>
+              </ul>
+            </div>
+
+            <!-- Frontend -->
+            <div class="skill-card">
+              <div class="skill-card-icon"><i class="fas fa-desktop"></i></div>
+              <h3 class="skill-card-title">Frontend</h3>
+              <ul class="skill-card-list">
+                <li>HTML5</li>
+                <li>CSS3</li>
+                <li>JavaScript (Core)</li>
+                <li>Thymeleaf</li>
+              </ul>
+            </div>
+
+            <!-- Database -->
+            <div class="skill-card">
+              <div class="skill-card-icon"><i class="fas fa-database"></i></div>
+              <h3 class="skill-card-title">Databases</h3>
+              <ul class="skill-card-list">
+                <li>MySQL</li>
+              </ul>
+            </div>
+
+            <!-- Tools -->
+            <div class="skill-card">
+              <div class="skill-card-icon"><i class="fas fa-tools"></i></div>
+              <h3 class="skill-card-title">Tools & Version Control</h3>
+              <ul class="skill-card-list">
+                <li>Git</li>
+                <li>GitHub</li>
+                <li>Postman</li>
+                <li>Maven</li>
+              </ul>
+            </div>
+
+            <!-- Other Skills -->
+            <div class="skill-card">
+              <div class="skill-card-icon">
+                <i class="fas fa-lightbulb"></i>
+              </div>
+              <h3 class="skill-card-title">Other Skills</h3>
+              <ul class="skill-card-list">
+                <li>REST API Development</li>
+                <li>OOP Concepts</li>
+                <li>Basic Data Structures</li>
+                <li>Problem Solving (LeetCode)</li>
+                <li>Responsive Web Design</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+    </th:block>
   </body>
 </html>
