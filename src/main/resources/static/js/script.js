@@ -84,3 +84,14 @@ card.addEventListener("mousemove", (e) => {
 card.addEventListener("mouseleave", () => {
   card.style.transform = "rotateX(0deg) rotateY(0deg)";
 });
+
+// --- Photo Popup ---
+function openPhotoPopup() {
+  document.getElementById("photoPopup").classList.add("active");
+}
+
+function closePhotoPopup(event) {
+  if (event.target.id === "photoPopup") {
+    document.getElementById("photoPopup").classList.remove("active");
+  }
+}

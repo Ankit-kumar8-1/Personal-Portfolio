@@ -10,6 +10,7 @@
       <section class="hero" id="home">
         <div class="hero-background"></div>
         <div class="container hero-container">
+          <!-- Hero content  -->
           <div class="hero-content">
             <div class="hero-greeting">Hi there , I'm</div>
             <h1 class="hero-title">
@@ -29,6 +30,7 @@
               <a href="#contact" class="btn btn-outline"> Get in Touch </a>
             </div>
 
+            <!-- Social Links  -->
             <div class="social-links">
               <a href="tel:+919416398480" class="social-link">
                 <i class="fas fa-phone-alt"></i>
@@ -62,40 +64,50 @@
 
         <div class="hero-visual">
             <div class="hero-visual-inner">
-  <div class="hero-visual-frame">
-      <img src="/images/AnkitSaahariya.png" alt="profile">
-  </div>
-</div>
+                  <div class="hero-visual-frame">
+                      <img src="/images/AnkitSaahariya.png" alt="profile">
+                  </div>
+            </div>
 
-<div class="hero-stats stats-1">
-  <div class="hero-stats-icon">
-      <i class="fas fa-code"></i>
-  </div>
-  <div class="hero-stats-text">
-      <div class="hero-stats-label">Developer</div>
-  </div>
-</div>
+            <button class="view-photo-btn" onclick="openPhotoPopup()">
+                <i class="fa-solid fa-user"></i>  View Resume
+            </button>
+            <div class="photo-popup" id="photoPopup" onclick="closePhotoPopup(event)">
+                <div class="photo-popup-inner">
+                    <img src="/images/Resume.png" alt="profile-large">
+                </div>
+            </div>
 
-<div class="hero-stats stats-2">
-  <div class="hero-stats-icon">
-      <i class="fas fa-server"></i>
-  </div>
-  <div class="hero-stats-text">
-      <div class="hero-stats-label">Backend Focus</div>
-  </div>
-</div>
+            <div class="hero-stats stats-1">
+                <div class="hero-stats-icon">
+                    <i class="fas fa-code"></i>
+                </div>
+                <div class="hero-stats-text">
+                    <div class="hero-stats-label">Developer</div>
+                </div>
+            </div>
 
-<div class="hero-stats stats-3">
-  <div class="hero-stats-icon">
-      <i class="fas fa-lightbulb"></i>
-  </div>
-  <div class="hero-stats-text">
-      <div class="hero-stats-label">Problem Solver</div>
-  </div>
-</div>
+            <div class="hero-stats stats-2">
+                <div class="hero-stats-icon">
+                    <i class="fas fa-server"></i>
+                </div>
+                <div class="hero-stats-text">
+                      <div class="hero-stats-label">Backend Focus</div>
+                </div>
+            </div>
+
+            <div class="hero-stats stats-3">
+                <div class="hero-stats-icon">
+                    <i class="fas fa-lightbulb"></i>
+                </div>
+                <div class="hero-stats-text">
+                    <div class="hero-stats-label">Problem Solver</div>
+                </div>
+            </div>
         </div>
         </div>
       </section>
     </th:block>
+    
   </body>
 </html>

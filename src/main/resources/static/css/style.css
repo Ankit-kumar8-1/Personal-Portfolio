@@ -301,6 +301,7 @@ a {
 }
 
 .hero-greeting {
+  padding-top: 100px;
   font-size: 1.2rem;
   font-weight: 500;
   color: var(--text-light);
@@ -587,7 +588,7 @@ a {
 }
 
 .hero-stats:hover {
-  transform: translateY(-6px);
+  transform: translateY(-1px);
 }
 
 /* icon */
@@ -605,20 +606,20 @@ a {
 
 /* position curve around image */
 .stats-1 {
-  top: 15%;
-  left: 75%;
+  top: 8%;
+  left: 85%;
   transform: translateX(-50%);
 }
 
 .stats-2 {
-  top: 45%;
+  top: 38%;
   left: 90%;
   transform: translateX(-50%);
 }
 
 .stats-3 {
-  top: 75%;
-  left: 75%;
+  top: 70%;
+  left: 85%;
   transform: translateX(-50%);
 }
 
@@ -640,14 +641,91 @@ a {
   /* mobile positions */
   .stats-1 {
     top: 5%;
-    left: 50%;
+    left: 90%;
   }
   .stats-2 {
     top: 25%;
-    left: 70%;
+    left: 100%;
   }
   .stats-3 {
     top: 50%;
-    left: 52%;
+    left: 90%;
+  }
+}
+
+/* --- View Photo Button (placed at bottom of photo) --- */
+.hero-visual {
+  position: relative;
+}
+
+.view-photo-btn {
+  position: absolute;
+  bottom: -55px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 10px 22px;
+  background: linear-gradient(90deg, #0ea5e9, #22c55e);
+  border: none;
+  color: #fff;
+  font-weight: 600;
+  font-size: 14px;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: 0.25s ease;
+  z-index: 10;
+}
+
+.view-photo-btn:hover {
+  transform: translateX(-50%) scale(1.06);
+}
+
+/* --- Fullscreen Popup Background --- */
+.photo-popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.68);
+  backdrop-filter: blur(7px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  pointer-events: none;
+  transition: 0.35s ease;
+  z-index: 9999;
+}
+
+.photo-popup.active {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+/* --- Popup Inner Image --- */
+.photo-popup-inner img {
+  width: 75%; /* Bigger preview */
+  max-width: 600px; /* Balanced size */
+  border-radius: 16px;
+  box-shadow: 0 25px 70px rgba(0, 0, 0, 0.45);
+  animation: popIn 0.35s ease forwards;
+}
+
+@keyframes popIn {
+  0% {
+    transform: scale(0.6);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+/* Mobile responsive */
+@media (max-width: 600px) {
+  .photo-popup-inner img {
+    width: 90%;
+    max-width: 380px;
   }
 }
