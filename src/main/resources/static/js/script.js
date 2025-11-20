@@ -95,3 +95,25 @@ function closePhotoPopup(event) {
     document.getElementById("photoPopup").classList.remove("active");
   }
 }
+
+// contact sections
+document.addEventListener("DOMContentLoaded", () => {
+  const animated = document.querySelectorAll(
+    ".section-title, .section-subtitle, .contact-info, .contact-form"
+  );
+
+  animated.forEach((el, index) => {
+    el.style.animationDelay = `${index * 0.2}s`;
+  });
+});
+
+// Smooth scrolling
+document.querySelectorAll('a[href^="#"]').forEach((link) => {
+  link.addEventListener("click", (e) => {
+    let target = document.querySelector(link.getAttribute("href"));
+    if (target) {
+      e.preventDefault();
+      target.scrollIntoView({ behavior: "smooth" });
+    }
+  });
+});

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+  <head>
+    <meta charset="UTF-8" />
+  </head>
+
+  <body>
+    <th:block th:fragment="achievements-section">
+      <section class="section achievements" id="achievements">
+        <div class="container">
+          <!-- Title -->
+          <div class="section-title-container">
+            <h2 class="section-title">Achievements</h2>
+            <p class="section-subtitle">My important milestones</p>
+          </div>
+
+          <!-- Cards Grid -->
+          <div class="achievements-grid">
+            <!-- Card 1 -->
+            <div class="achievement-card">
+              <div class="achievement-icon">🏆</div>
+              <h3 class="achievement-title">Top Performer Award</h3>
+              <p class="achievement-text">
+                Dummy text. You can write your real achievement later.
+              </p>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="achievement-card">
+              <div class="achievement-icon">🎓</div>
+              <h3 class="achievement-title">Certification Completed</h3>
+              <p class="achievement-text">
+                Dummy text. Add your certification details later.
+              </p>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="achievement-card">
+              <div class="achievement-icon">💼</div>
+              <h3 class="achievement-title">Internship Recognition</h3>
+              <p class="achievement-text">
+                Dummy text. Add your real description later.
+              </p>
+            </div>
+
+            <!-- Card 4 -->
+            <div class="achievement-card">
+              <div class="achievement-icon">🚀</div>
+              <h3 class="achievement-title">Project Milestone</h3>
+              <p class="achievement-text">
+                Dummy text. You can replace it anytime.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </th:block>
+  </body>
+</html>
