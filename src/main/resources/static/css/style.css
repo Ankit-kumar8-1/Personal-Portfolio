@@ -1041,7 +1041,7 @@ a {
 
 /* Project Card */
 .project-card {
-  background: transparent;
+  background: #1a1e24;
   border-radius: 16px;
   border: 2px solid rgba(255, 255, 255, 0.06);
   overflow: hidden;
