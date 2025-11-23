@@ -1,11 +1,11 @@
-<!-- <!DOCTYPE html>
+<!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org">
   <head>
     <meta charset="UTF-8" />
   </head>
 
   <body>
-    
+    <!-- header Fragment -->
     <th:block th:fragment="contact-section">
       <section class="section contact" id="contact">
         <div class="container">
@@ -14,6 +14,9 @@
             <p class="section-subtitle">
               Have a project in mind or want to collaborate ? Let's talk!
             </p>
+            <div class="contact-banner">
+              <img src="images/taskflow.jpg" alt="Contact Banner" />
+            </div>
           </div>
           <div class="container">
             <div class="contact-info">
@@ -35,19 +38,22 @@
                     <span class="contact-link-value">+919643196617</span>
                   </div>
                 </a>
-                
-                <a href="mailto:ankitksoftware@gmail.com" class="contact-links">
+                <!-- gmail  -->
+                <a
+                  href="mailto:ankitk.software@gmail.com"
+                  class="contact-links"
+                >
                   <div class="contact-link-icon">
                     <i class="fas fa-envelope"></i>
                   </div>
                   <div class="contact-link-text">
                     <span class="contact-link-label">Email</span>
                     <span class="contact-link-value"
-                      >ankitksoftware@gmail.com</span
+                      >ankitk.software@gmail.com</span
                     >
                   </div>
                 </a>
-                
+                <!--  -->
                 <a
                   href="https://www.linkedin.com/in/ankitkumar1c"
                   class="contact-links"
@@ -66,7 +72,7 @@
             <div class="contact-form">
               <form action="#" method="post">
                 <div class="form-group">
-                  <label for="name" class="form-label">your name</label>
+                  <label for="name" class="form-label">Your name</label>
                   <input
                     type="text"
                     class="form-control"
@@ -105,4 +111,4 @@
       </section>
     </th:block>
   </body>
-</html> -->
+</html>
